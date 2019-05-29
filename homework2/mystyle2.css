@@ -12,7 +12,7 @@ abbr{
     text-decoration: underline;
 }
 p {
-    font-family: Georgia, Garamond;
+    font-family: Georgia, Garamond, 'sans-serif';
     font-size: 11pt;
     color: #404040;
 }
@@ -28,7 +28,7 @@ h1 {
     text-align: center;
     text-decoration: underline;
     color: #A4A400;
-    margin: .25em;
+    letter-spacing:  .25em;
 }
 a{
     color:#A4A400;
@@ -39,7 +39,7 @@ h2 {
     font-size: 18pt;
     text-decoration: underline;
     color: #A4A400;
-    margin: .25em;
+    letter-spacing:  .25em;
 }
 
 blockquote {
