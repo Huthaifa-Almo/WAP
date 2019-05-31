@@ -5,6 +5,17 @@ body {
     background-repeat: repeat;
 }
 
+dt{
+    font-weight: bold;
+    margin-bottom: 5pt;
+    margin-top: 5pt;
+    margin-left: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
 #banner {
     background-image: url("bannerbg.png");
     background-repeat: repeat-x;
@@ -79,8 +90,12 @@ body {
     float: left;
 }
 .right{
+    font-family: Arial,sans-serif;
+    font-size: 8pt;
     margin-left: 550px;
+    padding-bottom: 10px;
     background-color: #A2B964;
+    vertical-align: middle;
 }
 
 .bottom{
