@@ -9,3 +9,7 @@ body, input, button {
 div {
     margin: 0.5em;
 }
+
+.validator{
+    float: right;
+}
