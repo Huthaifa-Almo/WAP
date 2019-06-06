@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="formValidation.css" title="style"/>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <img src="cof-logo.png">
+</div>
+<form>
+    <fieldset>
+        <legend>
+            Personal Information
+        </legend>
+        <div class="row">
+            <span class="column">
+            <label> First Name</label><br>
+                <input type="text" required/>
+            </span>
+            <span class="column">
+            <label>Last Name</label><br>
+                <input type="text" required/>
+            </span>
+
+        </div>
+        <div class="row">
+            <span class="column">
+            <label>Date of Birth</label><br>
+                <input type="date">
+            </span>
+            <span class="column">
+            <label>Mother's Maiden Name</label><br>
+                 <input type="text" required/>
+            </span>
+        </div>
+        <div class="row">
+            <span class="column">
+            <label>Social Security Number</label><br>
+                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+            </span>
+            <span class="row">
+            <label>How Did you learn about this card</label><br>
+<select id="personal-learn-about-source" name="personalLearnAbout" class="">
+    <option value="" disabled="">Select source</option>
+    <option value="mailOffer">Mail Offer</option><option value="searchEngine">Search Engine</option>
+    <option value="onlineBanner">Online Banner Ad or Video</option><option
+        value="facebook">Facebook Ad or Video</option>
+    <option value="comparisonSite">Credit Cards Comparison Site</option>
+    <option value="email">Email with CapitalOne Content</option><option value="familyFriend">Family or Friend</option>
+    <option value="television">Television</option><option value="outdoorAd">Outdoor or Transit Ad</option>
+    <option value="newspaper">Newspaper</option><option value="magazine">Magazine</option><option
+        value="sponsoredEvent">CapitalOne Sponsored Event</option>
+    <option value="other">Other</option></select>
+            </span>
+        </div>
+
+
+    </fieldset>
+    <fieldset>
+        <legend>
+            Authorized User
+        </legend>
+        <label> <input type="checkbox">
+            <stong>Yes!</stong>
+            I would like to add an Authorized User (AU) to my account and receive a second card with their name on
+            it.</label>
+    </fieldset>
+    <fieldset>
+        <legend>
+            Employment Information
+        </legend>
+        <div class="row">
+            <span class="column">
+            <label> Street Address</label><br>
+                <input type="text" required/>
+            </span>
+            <span class="column">
+            <label>Suit/Apt.# (if Applicable)</label><br>
+                <input type="text" required/>
+            </span>
+
+        </div>
+        <div class="row1">
+            <span class="column1">
+            <label>City</label><br>
+                <input type="date" required> <br>
+            </span>
+            <span class="column1">
+            <label>Province</label>
+                 <select required><option
+                         value="" disabled="">Select province</option><option value="AB">AB</option><option value="BC">BC</option><option
+                         value="MB">MB</option><option value="NB">NB</option><option value="NL">NL</option><option
+                         value="NS">NS</option><option value="NT">NT</option><option value="NU">NU</option><option
+                         value="ON">ON</option><option value="PE">PE</option><option value="QC">QC</option><option
+                         value="SK">SK</option><option value="YT">YT</option></select>
+            </span>
+
+            <span class="column1">
+            <label>Postal Code</label><br>
+                <input type="number" required/>
+            </span>
+        </div>
+        <div class="row">
+            <span class="column">
+            <label>Email Address</label><br>
+                <input type="email" required>
+            </span>
+            <span class="column">
+            <label>Primary Phone Number</label><br>
+                <input type="tel" required>
+            </span>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>
+            submitting process
+        </legend>
+        <input type="submit" value="Submit">
+    </fieldset>
+</form>
+</body>
+</html>
