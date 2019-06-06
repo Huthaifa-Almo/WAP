@@ -1,17 +1,21 @@
-var x=0;
+var x;
 function myFunction() {
-    if (x===0){
-        x=1;
         var text = document.getElementById("mytext");
         var stl =  window.getComputedStyle(text);
         var old = stl.getPropertyValue('font-size');
         text.style.fontSize = (parseInt(old) + 2 + "px");
-    }
-    else{
-        x=0;
-    }
+
 }
 
+function  doit() {
+    if (!x) {
+     x= setInterval(myFunction, 500)
+    }
+    else{
+        clearInterval(x);
+        x=null;
+    }
+}
 function myFunction2() {
     var text = document.getElementById("mytext");
     var chk = document.getElementById("styleme");
